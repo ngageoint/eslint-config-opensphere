@@ -1,0 +1,63 @@
+{
+  "dependencies": {},
+  "description": "ESLint config for opensphere",
+  "directories": {},
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "closure",
+    "google",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "license": "Apache-2.0",
+  "name": "eslint-config-opensphere",
+  "author": "Kevin Schmidt <kschmidt@caci.com>",
+  "maintainers": [
+    "Kevin Schmidt <kschmidt@caci.com>",
+    "William Wall <wwall@caci.com>"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg",
+      "post-merge": " npm update && npm install",
+      "post-rewrite": " npm update && npm install"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "\nPlease fix your commit message (consider using 'npm i -g commitizen'). Well-formatted commit messages allow us to automate our changelog and npm releases.\n\nExamples:\n\"fix(command): Fixed an error when undoing the command stack\"\n\"feat(array): Added utility function for joining arrays\"\n\nIf you have installed commitizen, try running 'git cz'."
+    }
+  },
+  "peerDependencies": {
+    "eslint": ">=2.7.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-plugin-google-camelcase": "^0.0.2",
+    "eslint-plugin-opensphere": "^0.1.0"
+  },
+  "readme": "README.md",
+  "scripts": {},
+  "version": "1.0.0",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "husky": "^0.13.3",
+    "validate-commit-msg": "^2.12.1"
+  }
+}

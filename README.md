@@ -3,6 +3,9 @@
 12/6/2017
 
 ## About
+This config changes everything that must be changed in order for code to pass the Google Closure Compiler with ADVANCED compilation. Technically the `dot-notation` and `quote-props` rules could be fixed with externs for the given code.
+
+## Open Sphere
 
 OpenSphere was developed at the National Geospatial-Intelligence Agency (NGA) in collaboration with BIT Systems. The government has "unlimited rights" and is releasing this software to increase the impact of government investments by providing developers with the opportunity to take things in new directions. The software use, modification, and distribution rights are stipulated within the Apache license.
 

@@ -33,6 +33,10 @@
     "Kevin Schmidt <kschmidt@caci.com>",
     "William Wall <wwall@caci.com>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngageoint/eslint-config-opensphere.git"
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"

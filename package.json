@@ -73,7 +73,10 @@
       "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
-        "assets": ["package.json", "CHANGELOG.md"],
+        "assets": [
+          "package.json",
+          "CHANGELOG.md"
+        ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       },
       "@semantic-release/github"
@@ -90,5 +93,5 @@
     "semantic-release": "^11.0.2",
     "validate-commit-msg": "^2.12.1"
   },
-  "version": "1.0.1"
+  "version": "0.0.0-development"
 }

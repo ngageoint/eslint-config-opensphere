@@ -5,7 +5,7 @@ logs
 
 # NPM resources
 ########################
-node_modules/
+node_modules
 .npm
 npm-debug.log*
 package-lock.json

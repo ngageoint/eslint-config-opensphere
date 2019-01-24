@@ -157,7 +157,7 @@ module.exports = {
     "space-unary-ops": "error",
 
     // enforce consistent spacing after the // or /* in a comment, and before the */
-    "spaced-comment": ["error", "always", { "block": { "balanced": true }}],
+    "spaced-comment": ["error", "always", { "line": { "markers": ["/"]}, "block": { "balanced": true}}],
 
     // require the jsdocs to be valid
     "valid-jsdoc": ["error", {

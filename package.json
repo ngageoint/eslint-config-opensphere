@@ -39,12 +39,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    },
-    "ghooks": {
-      "commit-msg": "validate-commit-msg",
-      "post-merge": " npm update && npm install",
-      "post-rewrite": " npm update && npm install"
+      "path": "cz-conventional-changelog"
     },
     "validate-commit-msg": {
       "helpMessage": "\nPlease fix your commit message (consider using 'npm i -g commitizen'). Well-formatted commit messages allow us to automate our changelog and npm releases.\n\nExamples:\n\"fix(command): Fixed an error when undoing the command stack\"\n\"feat(array): Added utility function for joining arrays\"\n\nIf you have installed commitizen, try running 'git cz'."
@@ -83,15 +78,20 @@
     ]
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^1.0.0",
+    "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/condition-travis": "^7.1.3",
     "@semantic-release/git": "^2.0.1",
     "@semantic-release/github": "^3.0.0",
     "@semantic-release/npm": "^2.5.0",
     "cz-conventional-changelog": "^1.2.0",
-    "husky": "^0.13.3",
-    "semantic-release": "^11.0.2",
+    "husky": "^1.3.1",
+    "semantic-release": "^15.13.3",
     "validate-commit-msg": "^2.12.1"
   },
-  "version": "1.1.0"
+  "version": "1.1.0",
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  }
 }

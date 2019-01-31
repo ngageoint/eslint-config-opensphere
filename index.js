@@ -13,7 +13,6 @@ module.exports = {
     //
     // Rules from the eslint:recommend rule set, not defined by eslint-config-google
     //
-
     "no-cond-assign": "error",
     "no-constant-condition": ["error", { "checkLoops": false }],
     "no-debugger": "error",

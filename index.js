@@ -4,6 +4,7 @@ module.exports = {
   "extends": "google",
   "plugins": [
     "google-camelcase",
+    "jsdoc",
     "opensphere"
   ],
   "env": {
@@ -156,7 +157,7 @@ module.exports = {
     "space-unary-ops": "error",
 
     // enforce consistent spacing after the // or /* in a comment, and before the */
-    "spaced-comment": ["error", "always", { "line": { "markers": ["/"]}, "block": { "balanced": true}}],
+    "spaced-comment": ["error", "always", { "line": { "markers": ["/"] }, "block": { "balanced": true } }],
 
     // require the jsdocs to be valid
     "valid-jsdoc": ["error", {
@@ -164,19 +165,56 @@ module.exports = {
       "requireReturnDescription": false,
 
       // only require a return if there is one in the function
-      "requireReturn": false,
+      "requireReturn": false
+    }],
 
-      // use "return" instead of "returns"
-      "prefer": {
-        "returns": "return"
+    // Rules from jsdoc plugin
+    "jsdoc/check-alignment": 1, // Recommended
+    "jsdoc/check-examples": 0,
+    "jsdoc/check-indentation": 0,
+    "jsdoc/check-param-names": 1, // Recommended
+    "jsdoc/check-syntax": 0,
+    "jsdoc/check-tag-names": 1, // Recommended
+    "jsdoc/check-types": 1, // Recommended
+    "jsdoc/implements-on-classes": 1, // Recommended
+    "jsdoc/match-description": 0,
+    "jsdoc/newline-after-description": 1, // Recommended
+    "jsdoc/no-types": 0,
+    // if this is enabled, all global namespaces (goog, ol, os, etc) must be defined in the config
+    "jsdoc/no-undefined-types": 0, // Recommended
+    "jsdoc/require-description": 0,
+    "jsdoc/require-description-complete-sentence": 0,
+    "jsdoc/require-example": 0,
+    "jsdoc/require-hyphen-before-param-description": 0,
+    "jsdoc/require-jsdoc": 1, // Recommended
+    "jsdoc/require-param": 1, // Recommended
+    "jsdoc/require-param-description": 0, // Recommended
+    "jsdoc/require-param-name": 1, // Recommended
+    "jsdoc/require-param-type": 1, // Recommended
+    // only require a return if there is one in the function
+    "jsdoc/require-returns": 0, // Recommended
+    "jsdoc/require-returns-check": 1, // Recommended
+    "jsdoc/require-returns-description": 0, // Recommended
+    "jsdoc/require-returns-type": 1, // Recommended
+    "jsdoc/valid-types": 0 // Recommended
+  },
+  "settings": {
+    "jsdoc": {
+      "additionalTagNames": {
+        "customTags": ["export", "final", "inheritDoc", "ngInject", "struct", "suppress"]
       },
-
-      // use lower case primitive names
-      "preferType": {
+      // use "return" instead of "returns"
+      "tagNamePreference": {
+        "returns": "return",
+        "class": "constructor",
+        "augments": "extends"
+      },
+      "preferredTypes": {
         "Boolean": "boolean",
         "Number": "number",
-        "String": "string"
+        "String": "string",
+        "object": "Object"
       }
-    }]
+    }
   }
 };

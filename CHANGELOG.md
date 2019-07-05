@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v1.1.3...v2.0.0) (2019-07-05)
+
+
+### Features
+
+* Upgrade of eslint to 6.0.0 ([fb5688a](https://github.com/ngageoint/eslint-config-opensphere/commit/fb5688a))
+
+
+### BREAKING CHANGES
+
+* Changes to eslint javadoc checks may cause `yarn lint` errors.
+
 ## [1.1.3](https://github.com/ngageoint/eslint-config-opensphere/compare/v1.1.2...v1.1.3) (2019-01-31)
 
 

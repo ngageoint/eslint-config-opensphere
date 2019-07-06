@@ -177,7 +177,7 @@ module.exports = {
     "jsdoc/check-types": "error", // Recommended
     "jsdoc/implements-on-classes": "error", // Recommended
     "jsdoc/match-description": "off",
-    "jsdoc/newline-after-description": "error", // Recommended
+    "jsdoc/newline-after-description": "off", // Recommended
     "jsdoc/no-types": "off",
     // if this is enabled, all global namespaces (goog, ol, os, etc) must be defined in the config
     "jsdoc/no-undefined-types": "off", // Recommended
@@ -190,7 +190,6 @@ module.exports = {
     "jsdoc/require-param-description": "off", // Recommended
     "jsdoc/require-param-name": "error", // Recommended
     "jsdoc/require-param-type": "error", // Recommended
-    // only require a return if there is one in the function
     "jsdoc/require-returns": "error", // Recommended
     "jsdoc/require-returns-check": "error", // Recommended
     "jsdoc/require-returns-description": "off", // Recommended

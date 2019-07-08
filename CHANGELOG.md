@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v2.0.0...v2.0.1) (2019-07-08)
+
+
+### Bug Fixes
+
+* **deps:** Upgrade peer dependencies ([ca0900b](https://github.com/ngageoint/eslint-config-opensphere/commit/ca0900b))
+
 # [2.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v1.1.3...v2.0.0) (2019-07-05)
 
 

@@ -100,9 +100,17 @@ module.exports = {
       "CallExpression": {
         "arguments": 2
       },
+      "FunctionDeclaration": {
+        "parameters": 2
+      },
+      "FunctionExpression": {
+        "parameters": 2
+      },
       "MemberExpression": 2,
       "SwitchCase": 1,
-      "VariableDeclarator": 2
+      "VariableDeclarator": 2,
+      // allow ternary operators to be formatted at the developer's discretion
+      "ignoredNodes": ["ConditionalExpression"]
     }],
 
     // allow a maximum line length of 120

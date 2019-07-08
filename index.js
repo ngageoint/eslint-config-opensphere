@@ -201,11 +201,11 @@ module.exports = {
       "additionalTagNames": {
         "customTags": ["export", "final", "inheritDoc", "ngInject", "struct", "suppress"]
       },
-      // use "return" instead of "returns"
       "tagNamePreference": {
-        "returns": "return",
+        "augments": "extends",
         "class": "constructor",
-        "augments": "extends"
+        "constant": "const",
+        "returns": "return"
       },
       "preferredTypes": {
         "Boolean": "boolean",

@@ -1,3 +1,21 @@
+# [3.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v2.0.1...v3.0.0) (2019-07-08)
+
+
+### Bug Fixes
+
+* **indent:** Restore function param indent behavior. ([10cf3aa](https://github.com/ngageoint/eslint-config-opensphere/commit/10cf3aa))
+* **jsdoc:** Prefer const over constant. ([2adfabd](https://github.com/ngageoint/eslint-config-opensphere/commit/2adfabd))
+
+
+### Features
+
+* **jsdoc:** Don't require a newline after the description. ([e05e3ee](https://github.com/ngageoint/eslint-config-opensphere/commit/e05e3ee))
+
+
+### BREAKING CHANGES
+
+* **indent:** Function parameters previously used the default of 1 indentation level, and now require 2. This was the pre-ESLint 6 behavior and should only require changes for projects that have already upgraded.
+
 ## [2.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v2.0.0...v2.0.1) (2019-07-08)
 
 

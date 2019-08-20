@@ -10,6 +10,7 @@ os:
 - linux
 script:
 - node index.js
+- commitlint-travis
 after_success:
 - npm run semantic-release
 branches:

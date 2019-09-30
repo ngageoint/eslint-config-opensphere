@@ -1,5 +1,7 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "eslint-config-google": "^0.13.0"
+  },
   "description": "ESLint config for opensphere",
   "directories": {},
   "files": [

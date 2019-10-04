@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.0.0...v3.1.0) (2019-10-04)
+
+
+### Features
+
+* allow es6 syntax ([cbd14c3](https://github.com/ngageoint/eslint-config-opensphere/commit/cbd14c3))
+
 # [3.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v2.0.1...v3.0.0) (2019-07-08)
 
 

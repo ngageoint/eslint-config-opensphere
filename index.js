@@ -10,6 +10,9 @@ module.exports = {
   "env": {
     "browser": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
   "rules": {
     //
     // Rules from the eslint:recommend rule set, not defined by eslint-config-google

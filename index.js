@@ -60,11 +60,13 @@ module.exports = {
     //
 
     // enforce rules for goog.provide and good.require statements
+    "opensphere/modules-first": "error",
+    "opensphere/no-duplicate-requires": "error",
     "opensphere/provides-first": "error",
     "opensphere/provides-sorted": "error",
     "opensphere/requires-first": "error",
     "opensphere/requires-sorted": "error",
-    "opensphere/no-duplicate-requires": "error",
+    "opensphere/single-module": "error",
 
     // TODO: fix/remove checkTypes and uncomment this
     // "opensphere/no-suppress": ["error", ["checkTypes"]],

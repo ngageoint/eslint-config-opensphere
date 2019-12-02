@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.1.0...v3.2.0) (2019-12-02)
+
+
+### Features
+
+* **goog:** enable goog.module rules ([b8e856b](https://github.com/ngageoint/eslint-config-opensphere/commit/b8e856bfbd3b9df0f3d19fb19f9d9ffead9e465d))
+
 # [3.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.0.0...v3.1.0) (2019-10-04)
 
 

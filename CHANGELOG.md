@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.2.0...v3.3.0) (2019-12-10)
+
+
+### Features
+
+* use no-unused-vars override to allow goog.requireType ([d1c9b09](https://github.com/ngageoint/eslint-config-opensphere/commit/d1c9b09af7f3d46d2be21508e4f45cf16007acd8))
+
 # [3.2.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.1.0...v3.2.0) (2019-12-02)
 
 

@@ -68,6 +68,10 @@ module.exports = {
     "opensphere/requires-sorted": "error",
     "opensphere/single-module": "error",
 
+    // replace ESLint rule with opensphere's to ignore goog.requireType vars
+    "no-unused-vars": "off",
+    "opensphere/no-unused-vars": ["error", { "args": "none" }],
+
     // TODO: fix/remove checkTypes and uncomment this
     // "opensphere/no-suppress": ["error", ["checkTypes"]],
 

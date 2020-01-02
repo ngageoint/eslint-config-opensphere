@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.3.0...v3.4.0) (2020-01-02)
+
+
+### Features
+
+* **jsdoc:** remove valid-jsdoc and allow [@type](https://github.com/type) on functions ([9932934](https://github.com/ngageoint/eslint-config-opensphere/commit/9932934ee85ceb4fe42f6eaa596d4cb436384789))
+
 # [3.3.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.2.0...v3.3.0) (2019-12-10)
 
 

@@ -176,6 +176,9 @@ module.exports = {
     // enforce consistent spacing after the // or /* in a comment, and before the */
     "spaced-comment": ["error", "always", { "line": { "markers": ["/"] }, "block": { "balanced": true } }],
 
+    // disable old, deprecated valid-jsdoc rule
+    "valid-jsdoc": "off",
+
     // Rules from jsdoc plugin
     "jsdoc/check-alignment": "error", // Recommended
     "jsdoc/check-examples": "off",
@@ -195,14 +198,14 @@ module.exports = {
     "jsdoc/require-example": "off",
     "jsdoc/require-hyphen-before-param-description": "off",
     "jsdoc/require-jsdoc": "error", // Recommended
-    "jsdoc/require-param": "error", // Recommended
+    "jsdoc/require-param": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/require-param-description": "off", // Recommended
-    "jsdoc/require-param-name": "error", // Recommended
-    "jsdoc/require-param-type": "error", // Recommended
-    "jsdoc/require-returns": "error", // Recommended
-    "jsdoc/require-returns-check": "error", // Recommended
+    "jsdoc/require-param-name": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-param-type": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-returns": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-returns-check": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/require-returns-description": "off", // Recommended
-    "jsdoc/require-returns-type": "error", // Recommended
+    "jsdoc/require-returns-type": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/valid-types": "off" // Recommended
   },
   "settings": {

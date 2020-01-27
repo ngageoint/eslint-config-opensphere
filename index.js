@@ -54,6 +54,13 @@ module.exports = {
     // "block-scoped-var": "error",
     // "no-redeclare": "error",
 
+    //
+    // Allow rejecting promises with a string error message.
+    //
+    // Note: This was specifically disabled to allow shadowing the native Promise with:
+    //    const Promise = goog.require('goog.Promise');
+    //
+    "prefer-promise-reject-errors": "off",
 
     //
     // Custom rules from eslint-plugin-opensphere

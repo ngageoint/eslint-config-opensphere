@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.4.0...v3.4.1) (2020-01-28)
+
+
+### Bug Fixes
+
+* disable prefer-promise-reject-errors to allow shadowing Promise ([08b53ff](https://github.com/ngageoint/eslint-config-opensphere/commit/08b53ff289d3efe09fae7e90c051235b9ff05539))
+
 # [3.4.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.3.0...v3.4.0) (2020-01-02)
 
 

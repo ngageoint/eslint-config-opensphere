@@ -183,7 +183,8 @@ module.exports = {
     // enforce consistent spacing after the // or /* in a comment, and before the */
     "spaced-comment": ["error", "always", { "line": { "markers": ["/"] }, "block": { "balanced": true } }],
 
-    // disable old, deprecated valid-jsdoc rule
+    // disable old, deprecated jsdoc rules
+    "require-jsdoc": "off",
     "valid-jsdoc": "off",
 
     // Rules from jsdoc plugin
@@ -204,15 +205,21 @@ module.exports = {
     "jsdoc/require-description-complete-sentence": "off",
     "jsdoc/require-example": "off",
     "jsdoc/require-hyphen-before-param-description": "off",
-    "jsdoc/require-jsdoc": "error", // Recommended
+    "jsdoc/require-jsdoc": ["error", { // Recommended
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+      },
+    }],
     "jsdoc/require-param": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/require-param-description": "off", // Recommended
-    "jsdoc/require-param-name": ["error", {"exemptedBy": ["type"]}], // Recommended
-    "jsdoc/require-param-type": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-param-name": ["error"], // Recommended
+    "jsdoc/require-param-type": ["error"], // Recommended
     "jsdoc/require-returns": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/require-returns-check": ["error", {"exemptedBy": ["type"]}], // Recommended
     "jsdoc/require-returns-description": "off", // Recommended
-    "jsdoc/require-returns-type": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-returns-type": ["error"], // Recommended
     "jsdoc/valid-types": "off" // Recommended
   },
   "settings": {
@@ -220,10 +227,12 @@ module.exports = {
       "additionalTagNames": {
         "customTags": ["export", "final", "inheritDoc", "ngInject", "struct", "suppress"]
       },
+      "mode": "closure",
       "tagNamePreference": {
         "augments": "extends",
         "class": "constructor",
         "constant": "const",
+        "file": "fileoverview",
         "returns": "return"
       },
       "preferredTypes": {

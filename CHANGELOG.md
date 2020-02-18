@@ -1,3 +1,17 @@
+# [4.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.4.1...v4.0.0) (2020-02-18)
+
+
+### Features
+
+* **jsdoc:** update eslint-config-jsdoc to latest, replace require-jsdoc ([04fc12e](https://github.com/ngageoint/eslint-config-opensphere/commit/04fc12e0bc061199d42c5d2a5573fd25401df9d3))
+
+
+### BREAKING CHANGES
+
+* **jsdoc:** The update to eslint-config-jsdoc may find rule violations
+that were previously missed. The most common occurrence seems to be with
+check-alignment, which can be resolved by --fix.
+
 ## [3.4.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.4.0...v3.4.1) (2020-01-28)
 
 

@@ -11,7 +11,8 @@ module.exports = {
     "browser": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
   "rules": {
     //
@@ -40,6 +41,14 @@ module.exports = {
     "no-unsafe-finally": "error",
     "use-isnan": "error",
     "valid-typeof": "error",
+
+    //
+    // TODO: this rule applies only in strict mode, which is implied with "sourceType": "module". it should be enabled
+    // as a breaking change, as it will likely cause additional lint findings.
+    //
+    // https://eslint.org/docs/rules/no-invalid-this
+    //
+    "no-invalid-this": "off",
 
     // if this is enabled, all global namespaces (goog, ol, os, etc) must be defined in the config
     "no-undef": "off",

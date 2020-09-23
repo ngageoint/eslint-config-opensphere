@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v4.0.0...v4.1.0) (2020-09-23)
+
+
+### Features
+
+* **es6:** use sourceType module to allow ES6 modules ([422ba3f](https://github.com/ngageoint/eslint-config-opensphere/commit/422ba3f5a526121808bbe9e1a44d55b0721af508))
+
 # [4.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v3.4.1...v4.0.0) (2020-02-18)
 
 

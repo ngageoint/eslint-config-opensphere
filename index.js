@@ -221,12 +221,12 @@ module.exports = {
         "ClassDeclaration": true,
       },
     }],
-    "jsdoc/require-param": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-param": ["error", {"exemptedBy": ["inheritDoc", "type"]}], // Recommended
     "jsdoc/require-param-description": "off", // Recommended
     "jsdoc/require-param-name": ["error"], // Recommended
     "jsdoc/require-param-type": ["error"], // Recommended
-    "jsdoc/require-returns": ["error", {"exemptedBy": ["type"]}], // Recommended
-    "jsdoc/require-returns-check": ["error", {"exemptedBy": ["type"]}], // Recommended
+    "jsdoc/require-returns": ["error", {"exemptedBy": ["inheritDoc", "type"]}], // Recommended
+    "jsdoc/require-returns-check": ["error"], // Recommended
     "jsdoc/require-returns-description": "off", // Recommended
     "jsdoc/require-returns-type": ["error"], // Recommended
     "jsdoc/valid-types": "off" // Recommended

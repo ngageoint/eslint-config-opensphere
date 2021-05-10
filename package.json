@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "eslint-config-google": "^0.13.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-google-camelcase": "^0.0.2",
-    "eslint-plugin-jsdoc": "^21.0.0",
-    "eslint-plugin-opensphere": "^2.3.0"
+    "eslint-plugin-jsdoc": "^33.1.0",
+    "eslint-plugin-opensphere": "^2.5.0"
   },
   "description": "ESLint config for opensphere",
   "directories": {},
@@ -43,7 +43,7 @@
     "url": "https://github.com/ngageoint/eslint-config-opensphere.git"
   },
   "peerDependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^7.26.0"
   },
   "readme": "README.md",
   "scripts": {
@@ -69,8 +69,8 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",

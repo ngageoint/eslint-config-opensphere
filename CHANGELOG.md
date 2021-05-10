@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v4.1.0...v5.0.0) (2021-05-10)
+
+
+### Features
+
+* **ecma:** change ecmaVersion to 2020 to match compiler ([4101159](https://github.com/ngageoint/eslint-config-opensphere/commit/41011598befd880e07cdd68dc388d889b06c2470))
+* **eslint:** upgrade eslint/configs/plugins to latest ([f950be5](https://github.com/ngageoint/eslint-config-opensphere/commit/f950be5ff86ce6e7bdb2e5d6e20ad121e3ae7d5f))
+
+
+### BREAKING CHANGES
+
+* **eslint:** This may result in new lint errors in projects. The most common
+error introduced was with the operator-linebreak rule, which now more accurately
+detects issues. These errors can be fixed via eslint --fix.
+
 # [4.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v4.0.0...v4.1.0) (2020-09-23)
 
 

@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.0.0...v5.0.1) (2021-07-28)
+
+
+### Bug Fixes
+
+* **jsdoc:** upgrade eslint-config-jsdoc to fix runtime error ([5f19aa1](https://github.com/ngageoint/eslint-config-opensphere/commit/5f19aa1fb71e706e10e0b7e1091746fbd7572d14))
+
 # [5.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v4.1.0...v5.0.0) (2021-05-10)
 
 

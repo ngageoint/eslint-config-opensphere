@@ -1,9 +1,13 @@
 "use strict";
 
 module.exports = {
-  "extends": "google",
+  "extends": [
+    "google",
+    "plugin:import/recommended"
+  ],
   "plugins": [
     "google-camelcase",
+    "import",
     "jsdoc",
     "opensphere"
   ],
@@ -70,6 +74,23 @@ module.exports = {
     //    const Promise = goog.require('goog.Promise');
     //
     "prefer-promise-reject-errors": "off",
+
+    //
+    // Custom rules from eslint-plugin-import
+    //
+
+    // Warn when importing something marked as @deprecated
+    "import/no-deprecated": "warn",
+
+    // Do not allow importing using an absolute path (ie, '/some/path')
+    "import/no-absolute-path": "error",
+    // Do not allow relative paths to sibling projects (ie, '../some-project/src/index.js')
+    "import/no-relative-packages": "error",
+    // Do not allow relative paths to parents (ie, use full module path instead of '../')
+    // TODO: This is a breaking change from how we have been handling imports, and should be enabled in a major release.
+    // "import/no-relative-parent-imports": "error",
+    // Do not allow a module to import itself
+    "import/no-self-import": "error",
 
     //
     // Custom rules from eslint-plugin-opensphere

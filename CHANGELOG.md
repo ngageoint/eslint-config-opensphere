@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.0.1...v5.1.0) (2021-09-16)
+
+
+### Features
+
+* **import:** add import rules that meet current style ([ec806f1](https://github.com/ngageoint/eslint-config-opensphere/commit/ec806f11f37e04370722d23e31f488e499612ce9))
+
 ## [5.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.0.0...v5.0.1) (2021-07-28)
 
 

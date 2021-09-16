@@ -81,7 +81,7 @@
     "husky": "^3.0.1",
     "semantic-release": "^17.3.9"
   },
-  "version": "5.0.1",
+  "version": "5.1.0",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"

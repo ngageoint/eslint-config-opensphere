@@ -87,10 +87,27 @@ module.exports = {
     // Do not allow relative paths to sibling projects (ie, '../some-project/src/index.js')
     "import/no-relative-packages": "error",
     // Do not allow relative paths to parents (ie, use full module path instead of '../')
-    // TODO: This is a breaking change from how we have been handling imports, and should be enabled in a major release.
-    // "import/no-relative-parent-imports": "error",
+    "import/no-relative-parent-imports": "error",
     // Do not allow a module to import itself
     "import/no-self-import": "error",
+
+    //
+    // Enforce ordering of imports:
+    //  - Built-in Node modules (fs, path, etc)
+    //  - External modules (package/path/to/module.js)
+    //  - Internal modules (src/path/to/module.js)
+    //  - Index (./index.js) and Siblings (./path/to/sibling.js)
+    //
+    //  - Unassigned imports are ignored, as their order may be important.
+    //  - Parent relative imports are also ignored, as they are not allowed via import/no-relative-parent-imports.
+    //
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "internal", ["index", "sibling"]],
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }],
 
     //
     // Custom rules from eslint-plugin-opensphere
@@ -165,8 +182,9 @@ module.exports = {
       120,
       4,
       {
-        // ignore for comments, regular expressions, and url's
+        // ignore for comments, import statements, regular expressions, and url's
         "ignoreComments": true,
+        "ignorePattern": "^import ",
         "ignoreRegExpLiterals": true,
         "ignoreUrls": true
       }

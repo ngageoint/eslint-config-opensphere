@@ -79,6 +79,10 @@ module.exports = {
     // Custom rules from eslint-plugin-import
     //
 
+    // Import paths relative to the module (ie, 'opensphere/src/path/to/module.js') will be treated as relative parent
+    // imports by eslint so this must be disabled.
+    "import/no-relative-parent-imports": "off",
+
     // Warn when importing something marked as @deprecated
     "import/no-deprecated": "warn",
 
@@ -86,8 +90,6 @@ module.exports = {
     "import/no-absolute-path": "error",
     // Do not allow relative paths to sibling projects (ie, '../some-project/src/index.js')
     "import/no-relative-packages": "error",
-    // Do not allow relative paths to parents (ie, use full module path instead of '../')
-    "import/no-relative-parent-imports": "error",
     // Do not allow a module to import itself
     "import/no-self-import": "error",
 

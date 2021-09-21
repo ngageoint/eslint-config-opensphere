@@ -1,3 +1,19 @@
+# [6.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.1.0...v6.0.0) (2021-09-21)
+
+
+### Features
+
+* **import:** disallow relative parent imports and enforce sort order ([6a15be5](https://github.com/ngageoint/eslint-config-opensphere/commit/6a15be5847a1ab7f2ef0f33e09f0a3086785b4a1))
+
+
+### BREAKING CHANGES
+
+* **import:** Relative parent imports ('../') are no longer allowed, and
+imports must be sorted. Module-relative imports must be grouped first, followed
+by sibling relative imports. Both groups must be sorted alphabetically. Both of
+these rules can be automatically enforced with the fiximports transform in
+opensphere-jscodeshift.
+
 # [5.1.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.0.1...v5.1.0) (2021-09-16)
 
 

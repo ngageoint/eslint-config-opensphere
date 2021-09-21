@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.0...v6.0.1) (2021-09-21)
+
+
+### Bug Fixes
+
+* **import:** allow relative parent imports for module relative paths ([029415d](https://github.com/ngageoint/eslint-config-opensphere/commit/029415d2bb788411c17f3c0ccc1568b3e43adab3))
+
 # [6.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v5.1.0...v6.0.0) (2021-09-21)
 
 

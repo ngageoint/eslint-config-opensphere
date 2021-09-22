@@ -79,8 +79,8 @@ module.exports = {
     // Custom rules from eslint-plugin-import
     //
 
-    // Import paths relative to the module (ie, 'opensphere/src/path/to/module.js') will be treated as relative parent
-    // imports by eslint so this must be disabled.
+    // Explicitly allow relative parent imports to avoid the need for aliases in webpack, eslint, etc outside of
+    // Yarn workspaces.
     "import/no-relative-parent-imports": "off",
 
     // Warn when importing something marked as @deprecated
@@ -95,16 +95,13 @@ module.exports = {
 
     //
     // Enforce ordering of imports:
-    //  - Built-in Node modules (fs, path, etc)
-    //  - External modules (package/path/to/module.js)
-    //  - Internal modules (src/path/to/module.js)
-    //  - Index (./index.js) and Siblings (./path/to/sibling.js)
-    //
+    //  - Use default groups (["builtin", "external", "internal", "parent", "sibling", "index", "object"]).
     //  - Unassigned imports are ignored, as their order may be important.
-    //  - Parent relative imports are also ignored, as they are not allowed via import/no-relative-parent-imports.
+    //  - Alphabetize within each group.
+    //
+    // Docs: https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/order.md
     //
     "import/order": ["error", {
-      "groups": ["builtin", "external", "internal", ["index", "sibling"]],
       "alphabetize": {
         "order": "asc",
         "caseInsensitive": true

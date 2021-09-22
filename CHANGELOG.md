@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.1...v6.0.2) (2021-09-22)
+
+
+### Bug Fixes
+
+* **import:** use default import groups and update comments ([dd3ad5b](https://github.com/ngageoint/eslint-config-opensphere/commit/dd3ad5b9c28bb60257d5b377c9be0de2856c3477))
+
 ## [6.0.1](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.0...v6.0.1) (2021-09-21)
 
 

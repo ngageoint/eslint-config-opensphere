@@ -48,7 +48,8 @@
   },
   "readme": "README.md",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postinstall": "husky install"
   },
   "release": {
     "plugins": [
@@ -78,13 +79,8 @@
     "@semantic-release/github": "^7.2.0",
     "@semantic-release/npm": "^7.0.10",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "husky": "^3.0.1",
+    "husky": "^7.0.4",
     "semantic-release": "^17.3.9"
   },
-  "version": "6.0.2",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
+  "version": "6.0.2"
 }

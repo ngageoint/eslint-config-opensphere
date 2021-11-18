@@ -1,3 +1,10 @@
+## [6.0.4](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.3...v6.0.4) (2021-11-18)
+
+
+### Bug Fixes
+
+* disable postinstall in published package ([3510cb1](https://github.com/ngageoint/eslint-config-opensphere/commit/3510cb17be55dd8e817f49c9dbed5e41e62193f7))
+
 ## [6.0.3](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.2...v6.0.3) (2021-11-18)
 
 

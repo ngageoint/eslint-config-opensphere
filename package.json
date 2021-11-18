@@ -85,5 +85,5 @@
     "pinst": "^2.1.6",
     "semantic-release": "^17.3.9"
   },
-  "version": "6.0.3"
+  "version": "6.0.4"
 }

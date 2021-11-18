@@ -44,7 +44,7 @@
     "url": "https://github.com/ngageoint/eslint-config-opensphere.git"
   },
   "peerDependencies": {
-    "eslint": "^7.26.0"
+    "eslint": ">=7.26.0"
   },
   "readme": "README.md",
   "scripts": {

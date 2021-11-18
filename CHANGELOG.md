@@ -1,3 +1,11 @@
+## [6.0.3](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.2...v6.0.3) (2021-11-18)
+
+
+### Bug Fixes
+
+* **eslint:** allow eslint >= 7.26.0 in peerDependencies ([4e9b609](https://github.com/ngageoint/eslint-config-opensphere/commit/4e9b6098a499272844a75152a8f684789b8e3084))
+* **release:** don't include patch notes in release commit ([52153cd](https://github.com/ngageoint/eslint-config-opensphere/commit/52153cd0ac6379c3d2962ec19e53dcad3ee8b0b3))
+
 ## [6.0.2](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.1...v6.0.2) (2021-09-22)
 
 

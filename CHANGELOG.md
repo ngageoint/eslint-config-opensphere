@@ -1,3 +1,17 @@
+# [7.0.0](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.4...v7.0.0) (2022-03-30)
+
+
+### Features
+
+* enforce esm import format ([e89ad14](https://github.com/ngageoint/eslint-config-opensphere/commit/e89ad143945956956c97a6af51ea4d345d9bca8b))
+
+
+### BREAKING CHANGES
+
+* File extensions are required for import statements,
+defaults are not allowed to be destructured,
+and all imports must be resolvable
+
 ## [6.0.4](https://github.com/ngageoint/eslint-config-opensphere/compare/v6.0.3...v6.0.4) (2021-11-18)
 
 

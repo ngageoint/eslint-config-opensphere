@@ -92,6 +92,21 @@ module.exports = {
     "import/no-relative-packages": "error",
     // Do not allow a module to import itself
     "import/no-self-import": "error",
+    // All imports must be resolveable
+    "import/no-unresolved": ["error", {
+      "caseSensitiveStrict": true
+    }],
+    // Use shortest path
+    "import/no-useless-path-segments": "error",
+    "import/no-duplicates": "error",
+    // Force extensions for import files
+    "import/extensions": ["error", {
+      "js": "always",
+      "json": "always",
+      "ts": "always"
+    }],
+    // No destructure for import of default exports
+    "import/no-named-default": "error",
 
     //
     // Enforce ordering of imports:
